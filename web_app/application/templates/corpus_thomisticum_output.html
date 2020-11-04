@@ -1,0 +1,8 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<p>Your search terms: {{searchTerm}}</p>
+<p>Number of results: {{size}}</p>
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+</meta>
